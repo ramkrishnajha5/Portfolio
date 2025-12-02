@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ram Krishna Jha | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ram Krishna Jha, a Frontend Developer specializing in React, Tailwind CSS, and Three.js." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            // Dark Mode Colors
+            background: '#050505',
+            surface: '#0a0a0a',
+
+            // Light Mode Colors - Redesigned
+            'background-light': '#f0f4f8', // Cool gray/blue tint
+            'surface-light': '#ffffff',
+            'text-light': '#1e293b', // Slate 800
+
+            primary: '#2dd4bf', // Teal-400 (Dark Mode)
+            'primary-dark': '#0f766e', // Teal-700 (Light Mode)
+
+            accent: '#f472b6', // Pink-400
+            secondary: '#94a3b8',
+          },
+          backgroundImage: {
+            'glass': 'linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+            'glass-light': 'linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #050505;
+      color: #e2e8f0;
+      overflow-x: hidden;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    .dark body {
+      background-color: #050505;
+      color: #e2e8f0;
+    }
+
+    :not(.dark) body {
+      background-color: #f0f4f8;
+      /* Soft cool gray */
+      color: #1e293b;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2dd4bf;
+    }
+
+    :not(.dark) ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+    }
+
+    :not(.dark) ::-webkit-scrollbar-thumb:hover {
+      background: #0f766e;
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #2dd4bf, #f472b6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    :not(.dark) .text-gradient {
+      background: linear-gradient(to right, #0d9488, #db2777);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "react-icons": "https://aistudiocdn.com/react-icons@^5.5.0",
+    "gsap/": "https://aistudiocdn.com/gsap@^3.13.0/",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
